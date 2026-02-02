@@ -117,21 +117,29 @@ function tilfeldigTall() {
   }
 }
 
+tilfeldigTall();
+
 //Oppgave 5
 
-function sumTall() {
+function sumTilfeldigeTall() {
   let sum = 0;
-  let tekst = "Tallene er: ";
+  let tallListe = [];
 
   for (let i = 0; i < 10; i++) {
     let tall = Math.floor(Math.random() * 20) + 1;
-    tekst += tall + " ";
+    tallListe.push(tall);
     sum += tall;
   }
 
-  console.log(tekst);
-  console.log("Summen er:", sum);
+  console.log(
+    "De tilfeldige tallene er: " +
+      tallListe.join(", ") +
+      ". Summen er " +
+      sum
+  );
 }
+
+sumTilfeldigeTall();
 
 //Oppgave 6
 
@@ -152,6 +160,9 @@ function gjettTall() {
   }
 }
 
+gjettTall();
+
+
 //Oppgave 7
 
 function tallOverTi() {
@@ -167,6 +178,8 @@ function tallOverTi() {
 
   alert("Tallene over 10 er: " + storeTall.join(", "));
 }
+
+tallOverTi();
 
 //Oppgave 8
 
@@ -185,3 +198,5 @@ function kastTerninger() {
 
   console.log("Begge ble 6 etter", kast, "kast.");
 }
+
+kastTerninger();
