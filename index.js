@@ -161,7 +161,7 @@ function gjettTall() {
 }
 
 gjettTall();
-
+// test
 
 //Oppgave 7
 
